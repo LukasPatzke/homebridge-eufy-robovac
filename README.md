@@ -24,6 +24,7 @@ To configure manually, add to the `accessories` section of homebridge's `config.
       "name": "Vacuum Cleaner",
       "deviceId": "<deviceId/devId>",
       "localKey": "<localKey>",
+      "ip": "<ip address>, optional, might help if you have connection problems",
       "hideFindButton": "<true | false, defaults to false>",
       "hideErrorSensor": "<true | false, defaults to false>",
       "useSwitchService": "<true | false, defaults to false>",
@@ -37,6 +38,8 @@ If `hideFindButton` is not supplied or set to false, a switch that performs the 
 If `hideErrorSensor` is not supplied or set to false, a Motion Sensor that is active when the vacuum has an error will also be added.  
 If `useSwitchService` is true, main Vacuum will be a switch instead of fan.  
 if `debugLog` is enabled (set to true), the underlying library will outut many logs.
+
+If you experience connection problems, it might help to supply the ip address in addition to the deviceId.
 
 ### Get Device ID & Local Key
 
